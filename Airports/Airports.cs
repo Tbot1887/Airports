@@ -14,6 +14,7 @@ using System.IO;
 using System.Net;
 using System.Web;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Airports
 {
@@ -150,6 +151,7 @@ namespace Airports
             bool isValid = false;
 
             //Convert to upper case
+            code = code.ToUpper();
             codeType = codeType.ToUpper();
 
             switch (codeType)
@@ -170,9 +172,20 @@ namespace Airports
                         }
                         break;
                     }
-                case "LID":
+                case "TC_LID":
                     {
-                        isValid = true;
+                        if (Regex.IsMatch(code, "C[A-Z0-9]{3}") && code.Length == 4)
+                        {
+                            isValid = true;
+                        }
+                        break;
+                    }
+                case "FAA_LID":
+                    {
+                        if (Regex.IsMatch(code, "[A-Z0-9]{3}") && code.Length <= 4 && code.Length > 2)
+                        {
+                            isValid = true;
+                        }
                         break;
                     }
                 default:
