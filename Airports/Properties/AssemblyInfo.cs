@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Computery")]
 [assembly: AssemblyProduct("Airports")]
-[assembly: AssemblyCopyright("CC BY-SA 4.0 International")]
+[assembly: AssemblyCopyright("© Copyright 2020 By Computery. Some Rights Reserved")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

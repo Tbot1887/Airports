@@ -1,12 +1,17 @@
-﻿/* 
- * LICENCE HEADER
- *
- * This work is licensed under a
- * Creative Commons Attribution-ShareAlike 4.0
- * International License.
- * 
- * Learn More: https://creativecommons.org/licenses/by-sa/4.0/
- */ 
+﻿/*
+	Project Name: Airport Class DLL
+	Written By: Thomas Ruigrok
+    
+    Copyright 2019-2020 By Thomas Ruigrok.
+    
+	This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+    This Source Code Form is "Incompatible With Secondary Licenses", as
+    defined by the Mozilla Public License, v. 2.0.
+*/
+
 using System;
 using System.Text;
 using System.Drawing;
